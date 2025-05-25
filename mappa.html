@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mappa Interattiva</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f6f9f7;
+      color: #2f4033;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      font-family: 'Quicksand', sans-serif;
+      color: #466254;
+    }
+    nav {
+      background: #d8ede2;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2f4033;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      background: #79b473;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      margin: 10px 5px;
+    }
+    .hero-img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .event, .post, .profile {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .form-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .tag {
+      font-size: 0.85em;
+      color: #79b473;
+    }
+    .map-box {
+      width: 100%;
+      height: 300px;
+      background: #e0e0e0;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 300px;
+      color: #555;
+    }
+    img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+  </style>
+
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="eventi.html">Eventi</a>
+  <a href="mappa.html">Mappa</a>
+  <a href="profili.html">Profili</a>
+  <a href="bacheca.html">Bacheca</a>
+</nav>
+<main>
+
+<h1>Mappa Interattiva</h1>
+<p>Visualizza i luoghi di pratica o clicca per proporre un nuovo luogo.</p>
+<div class="map-box">[Mappa Interattiva qui]</div>
+
+</main>
+</body>
+</html>
